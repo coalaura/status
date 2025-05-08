@@ -1,0 +1,8 @@
+config
+*.json
+status
+.env
+public/*.html
+public/*.js
+public/*.css
+status.lock
