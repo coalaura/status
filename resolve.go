@@ -25,7 +25,7 @@ func LoadTasks() (map[string]Task, error) {
 			return nil
 		}
 
-		name := strings.Split(filepath.Base(path), ".")[0]
+		name := strings.TrimSuffix(filepath.Base(path), ext)
 
 		data, err := os.ReadFile(path)
 		if err != nil {
